@@ -5,7 +5,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 let geojsonLayer;
-fetch('india-states.geojson')
+fetch('vertopal.com_Indian_States.json')
     .then(response => response.json())
     .then(data => {
         geojsonLayer = L.geoJson(data, {
